@@ -2,17 +2,96 @@
 	<head>
 		<script src="js/mail-generator.js"></script>
 		<link href="css/style.css" rel="stylesheet" media="screen">
+
     <script>
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
+
+        //creating div section for subject
+//attempt to see if array from mail-generator is showing up in this script
+        console.log(geemails);
+        console.log(geemails[1].sender);
+       
+        var Label1= "Date: ";
+        var Label2= "Sender: ";
+        var Label3= "Subject: ";
+        var Label4= "Message: ";
         
-      };
+
+for ( i=0; i<geemails.length; i++){
+ var gdate = document.createElement("div");
+//creating id for div
+gdate.id= "gdate";
+gdate.className = "click1";
+
+var main2 =document.getElementById("main2");
+
+
+gdate.innerHTML= Label1 + geemails[i].date;
+
+//add gsub into div "main2"
+main2.appendChild(gdate);    
+
+var gsender= document.createElement("div");
+//creating id for div
+gsender.id= "gsender";
+
+gsender.innerHTML= Label2 + geemails[i].sender;
+//add gsub into div "main2"
+main2.appendChild(gsender);
+
+var gsubject= document.createElement("div");
+//creating id for div
+gsubject.id= "gsubject";
+
+gsubject.innerHTML= Label3 + geemails[i].subject;
+//add gsub into div "main2"
+main2.appendChild(gsubject);
+
+var gmessage= document.createElement("div");
+//creating id for div
+gmessage.id= "gmessage";
+gmessage.className="toggl";
+
+gmessage.innerHTML= Label4 + geemails[i].body;
+//add gsub into div "main2"
+main2.appendChild(gmessage);
+}
+
+
+var mel =document.getElementsByClassName("click1");
+for(i=0;i<mel.length;i++){
+  mel[i].addEventListener("click",showMe);
+  
+}
+/*Below was used to test the click*/
+function showMe(){
+	var dsp = this.querySelectorAll(".toggl")[0];
+	dsp.style.display="block";
+        
+
+
+	  if (dsp.style.display==="block"){
+	dsp.style.display="none";
+	}else{
+		dsp.style.display="block";
+		}
+  }
+
+
+};
     </script>
 	</head>
 	<body>
 		<div class="container" id="main">
-			Build Me!
+			<h1 >Gee-Mail</h1>
 		</div>
+		<div class="border"> </div>
+		<div class="container" id="main2">
+
+		
+		</div>
+
 	</body>
 </html>

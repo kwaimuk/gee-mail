@@ -1,0 +1,50 @@
+body{
+	background-color:LightSteelBlue;
+}
+
+.border{
+	border-style: groove;
+}
+
+#main2{
+ padding-left: 10%;
+	border-style: groove;
+}
+
+#gdate {
+
+ padding-top: 10px; 
+}
+
+#gsubject {
+	
+/*    padding-top: 0px;
+ padding-right: 0px;*/
+ padding-bottom: 10px; 
+    
+    border-bottom-style: double;
+}
+
+#gmessage {
+	/*    padding-top: 0px;
+ padding-right: 0px;*/
+	margin-bottom: 15px; 
+	padding-bottom: 10px; 
+    border-bottom-style: double;
+    border-bottom-color: grey;
+    
+
+    border-top-style: solid;
+    border-top-color: LightSteelBlue;
+	border-top-width: 4px;
+    position: relative;
+    top: -4px;
+    display: none;
+
+
+}
+
+
+h1{
+	text-align: center;
+}
