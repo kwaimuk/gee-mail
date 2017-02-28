@@ -16,7 +16,7 @@ body{
  padding-top: 10px; 
 }
 
-#gsubject {
+.click1 {
 	
 /*    padding-top: 0px;
  padding-right: 0px;*/
@@ -25,26 +25,38 @@ body{
     border-bottom-style: double;
 }
 
+/* #gsubject {
+	
+padding-top: 0px;
+ padding-right: 0px;
+ padding-bottom: 10px; 
+    
+    border-bottom-style: double;
+} */
+
 #gmessage {
 	/*    padding-top: 0px;
  padding-right: 0px;*/
-	margin-bottom: 15px; 
-	padding-bottom: 10px; 
+/* 	margin-bottom: 15px; 
+ 
     border-bottom-style: double;
     border-bottom-color: grey;
     
 
     border-top-style: solid;
     border-top-color: LightSteelBlue;
-	border-top-width: 4px;
+border-top-width: 4px;
     position: relative;
-    top: -4px;
+    top: -4px;*/
     display: none;
-
-
+    padding-bottom: 20px;
 }
 
 
 h1{
 	text-align: center;
+}
+
+p{
+	padding-left: 10px;
 }
